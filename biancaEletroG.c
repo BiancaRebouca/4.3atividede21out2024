@@ -3,40 +3,54 @@
 
 int main() {
 
-    char operacao;
     int numero1;
     int numero2;
-    int soma;
-    //PEDINDO
- 
-    printf("INFORME A OPERCAO :  ");
-    scanf("%c", &operacao);
+    int soma1;
+    int soma2;
+    
 
-    printf("INFORME O PRIMEIRO NUMERO : ");
+    //PEDINDO
+
+    printf("INFORME OS DOIS PRIMEIROS NUMEROS DO ANO DE SEU NASCIMENTO: ");
     scanf("%d", &numero1);
 
-    printf("INFORME O SEGUNDO NUMERO : ");
+    printf("INFORME OS DOIS SEGUNDOS NUMEROS DO ANO DE SEU NASCIMENTO: ");
     scanf("%d", &numero2);
-    
-    //PRIMERO CASO
-    if(operacao =='+'){
-    soma = numero1 + numero2;
-    printf("%d" ,soma);
+
+    //somas
+
+    soma1 = numero1 + numero2;
+
+    soma2 = soma1 % 5;
+
+    //desisões
+
+    if(soma2==1){
+        printf("sonhador");
     }
-    //SEGUNDO CASO
-    else if(operacao =='-'){
-    soma = numero1 - numero2;
-    printf("%d" ,soma);
+
+    if(soma2==2){
+        printf("paquerador");
     }
-    //TERCEIRO CASO
-    else if(operacao =='*'){
-    soma = numero1 * numero2;
-    printf("%d" ,soma);
+    if(soma2==3){
+        printf("atraente");
     }
-    //QUARTO CASO
-    else{
-    soma = numero1 / numero2;
-    printf("%d" ,soma);
+    if(soma2==4){
+        printf("iresistivel");
     }
-    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
